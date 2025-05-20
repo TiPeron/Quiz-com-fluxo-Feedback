@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Sobre Carbono</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    .pergunta {
+      margin-bottom: 1rem;
+    }
+    .opcao {
+      display: block;
+      margin: 0.5rem 0;
+      padding: 0.5rem 1rem;
+      background-color: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .pontuacao, .feedback {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .feedback {
+      color: #333;
+      font-size: 1.1rem;
+    }
+    .feedback.correta {
+      color: green;
+    }
+    .feedback.errada {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Quiz Adaptativo</h1>
+  <div id="quiz-container">
+    <div class="pergunta" id="enunciado"></div>
+    <div id="opcoes"></div>
+    <div class="feedback" id="feedback"></div>
+  </div>
+
+  <script src="scripts/js.js"></script>
+
+  
+</body>
+</html>
